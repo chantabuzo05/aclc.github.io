@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Front Page</title>
+</head>
+<style>
+
+</style>
+<body>
+  <!--=====================NAVBAR================ -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light bg-gradient px-4 sticky-top" id="navbar" >
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarTogglerDemo01">
+            <img src="src/aclc.png" class="rounded  h-auto me-3" style=" min-width:5rem; max-width:15%;" alt="...">
+            <div class="col">
+              <ul class="nav nav-underline float-start " id="myTab" role="tablist" style="min-width:50vh; max-width:100%;">
+                <li class="nav-item " role="presentation">
+                  <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses-tab-pane" type="button" role="tab" aria-controls="courses-tab-pane" aria-selected="false">Courses</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact Us</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="about_us-tab" data-bs-toggle="tab" data-bs-target="#about_us-tab-pane" type="button" role="tab" aria-controls="about_us-tab-pane" aria-selected="false">About Us</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="col">
+        <a href="login.html" class="btn text-warning  fw-bold float-end " style="background-color: #800000;">Login</a>
+    </div>
+  </nav>
+  <!--==========================NAVBAR TAB CONTENT==================================================================================================-->
+  <div class="row mt-3 mx-3 mb-5 ">
+    <div class="col-md-6 order-md-1 order-2  justify-content-center ">
+      <div class="card  px-3 py-4  ">
+        <div class="tab-content " id="myTabContent">
+          <div class="tab-pane fade show active "  id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <object class="object-fit-cover" type="text/html" data="tabs/home.html" width="100%" height="505" ></object>
+          </div>
+          <div class="tab-pane fade" id="courses-tab-pane" role="tabpanel" aria-labelledby="courses-tab" tabindex="0">
+            <object class="object-fit-cover " type="text/html" data="tabs/courses.html" width="100%" height="505" ></object>
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <object class="object-fit-cover" type="text/html" data="tabs/contact_us.html" width="100%" height="505" ></object>
+          </div>
+          <div class="tab-pane fade" id="about_us-tab-pane" role="tabpanel" aria-labelledby="about_us-tab" tabindex="0">
+            <object class="object-fit-cover" type="text/html" data="tabs/about_us.html" width="100%" height="505" ></object>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="col-md-6 order-md-2 order-1 mb-3 justify-content-center">
+      <!--==========================SLIDESHOW==================================================================================================-->
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade w-90 mx-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-3 bg-secondary ">
+          <div class="carousel-item active " data-bs-interval="5000">
+            <img src="src/slide1.jpg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="src/slide2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+    
+  <script>
+    $(function(){
+      $("#tab_home").load("tabs/home.html"); 
+      $("#tab_courses").load("tabs/courses.html"); 
+      $("#tab_contact").load("tabs/contact_us.html"); 
+      $("#tab_about_us").load("tabs/about_us.html"); 
+
+    });
+   
+
+
+
+
+
+ </script>
+
+
+
+</body>
+</html>

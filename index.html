@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Front Page</title>
+</head>
+
+<body >
+  <!--=====================NAVBAR================ -->
+  <nav class="navbar fixed-top w-100 navbar-expand-lg bg-body-tertiary bg-light bg-gradient px-4" id="navbar" >
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarTogglerDemo01">
+            <img src="src/aclc.png" class="rounded  h-auto me-3" style=" min-width:5rem; max-width:15%;" alt="...">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#courses">Courses</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#admissions">Admissions</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#aboutUs">About Us</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#contactUs">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="col">
+        <a href="login.html" class="btn text-warning  fw-bold float-end " style="background-color: #800000;">Login</a>
+    </div>
+  </nav>
+  <!--==========================NAVBAR TAB CONTENT==================================================================================================-->
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <div class="row bg-light mx-3 w-responsive" id="home">
+      <h4 id="home" id="home">Home</h4>
+      <div class="row">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade w-90 mx-3" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-3 bg-secondary ">
+            <div class="carousel-item active " data-bs-interval="5000">
+              <img src="src/cover.jpg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="src/cover2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="src/cover4.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <section class="mx-3 px-5">
+          <p class="h4 fw-bold">ACLC College</p>
+          <p class="text-justify">
+            ACLC College is a member of the AMA Education System
+          and is one of the leading computer schools in the country.
+          With a curriculum that is based on the requirements of the
+          actual industry, ACLC College aims to produce highly competent
+          graduates, especially in the field of IT and other fields that
+          require knowledge in today's technology.</p>
+        </section>
+        <section class="mx-3 px-5">
+          <p class="text-justify"> AMA Computer Learning Center (ACLC) is a leading computer 
+          training institution in the country offering full 2-year programs
+          and short-term courses. It is focused on producing highly competent
+          and skilled graduates to address the growing needs of the local and
+          international markets. ACLC offers the most complete and up-to-date 
+          curriculum to equip students with the necessary skills to pursue an 
+          IT career. It also has international affiliations that allow ACLC 
+          graduates to get high paying jobs and continuous promotions.
+          </p>
+      
+        </section>
+      </div>
+
+      </div>
+    </div>
+   
+    <div class="row mx-3  rounded-3" id="courses">
+      <div class="container " id="container" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="row  text-center text-warning" id="college">
+          <p class="h3 bg-dark bg-opacity-50" >College Courses</p>
+          <div class="col-md-4 ">
+            <a href="links/courses.html?activatetab=bsit-tab" class="link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" >
+              <i class="text-white p-4 fa-solid fa-computer fa-4x rounded-circle" style="background-color: #800000;"></i><br>
+            <div class="p-1 bg-dark bg-opacity-50 rounded-3">
+              <p class="h3 ">BSIT</p>
+            </a>
+              <p class="h6 " >Bachelor of Science in Information Technology</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <a href="links/courses.html?activatetab=bse-tab" class="link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" >
+              <i class="text-white p-4 fa-solid fa-business-time fa-4x rounded-circle" style="background-color: #800000;"></i><br>
+            <div class="p-1 bg-dark bg-opacity-50 rounded-3">
+                <p class="h3">BSE</p>
+            </a>
+              <p class="h6">Bachelor of Science in Entrepreneurship</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <a href="links/courses.html?activatetab=act-tab" class="link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" >
+              <i class="text-white p-4 fa-solid fa-laptop fa-4x rounded-circle" style="background-color: #800000;"></i><br>
+            <div class="p-1 bg-dark bg-opacity-50 rounded-3">
+              <p class="h3">ACT</p>
+            </a>
+              <p class="h6">Associate in Computer Technology</p>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-3 text-center text-warning" id="senior_high">
+          <p class="h3 bg-dark bg-opacity-50 mt-2">Senior High Strand</p>
+          <div class="col-md-6 text-center">
+            <a href="links/courses.html?activatetab=tvl-tab" class="link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" >
+              <i class="text-white p-4 fa-solid fa-laptop fa-4x rounded-circle" style="background-color: #800000;"></i><br>
+            <div class="p-1 bg-dark bg-opacity-50 rounded-3">
+              <p class="h3">TVL</p>
+            </a>
+              <p class="h6">Technical Vocational Livelihood</p>
+              
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="links/courses.html?activatetab=humms-tab" class="link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" >
+              <i class="text-white p-4 fa-solid fa-comments fa-4x rounded-circle" style="background-color: #800000;"></i><br>
+            <div class="p-1 bg-dark bg-opacity-50 rounded-3">
+              <p class="h3">HUMMS</p>
+            </a>
+              <p class="h6">Humanities and Social Sciences</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="links/courses.html?activatetab=abm-tab" class="link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" >
+              <i class="text-white p-4 fa-solid fa-comments-dollar fa-4x rounded-circle" style="background-color: #800000;"></i><br>
+            <div class="p-1 bg-dark bg-opacity-50 rounded-3">
+              <p class="h3">ABM </p>
+            </a>
+              <p class="h6">Accountancy, Business and Management</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="links/courses.html?activatetab=gas-tab" class="link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" >
+              <i class="text-white p-4 fa-solid fa-book-open fa-4x rounded-circle" style="background-color: #800000;"></i><br>
+            <div class="p-1 bg-dark bg-opacity-50 rounded-3">
+              <p class="h3">GAS </p>
+            </a>
+              <p class="h6">General Academic Strand</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mx-3 bg-warning " id="events" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <h4 >Events</h4>
+      <div class="row  mb-2 mx-auto">
+        <div class="col mb-2">
+          <div class="card rounded-3 mx-auto" style="max-width: 400px; max-height: 450px; min-width: 250px; min-height: 250px;" data-aos="flip-up" data-aos-duration="1500" >
+            <div class="card-body rounded-top-3" style="background-image: url('src/acquaintance.jpg'); background-size: cover; background-position: center; max-width: 400px; max-height: 260px; min-width: 200px; min-height: 150px;">
+              
+            </div>
+            <div class="card-footer text-white rounded-bottom-3" style="background-color: #800000;">
+             <p class="fw-bold h5">Acquaintance Party</p>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col mb-2">
+          <div class="card rounded-3 mx-auto" style="max-width: 400px; max-height: 450px; min-width: 250px; min-height: 250px;" data-aos="flip-up" data-aos-duration="1500" >
+            <div class="card-body rounded-top-3" style="background-image: url('src/sportfest.jpg'); background-size: 400px 210px; background-position: center; background-repeat: no-repeat;">
+              
+            </div>
+            <div class="card-footer text-white rounded-bottom-3" style="background-color: #800000;">
+             <p class="fw-bold h5">Sportfest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2 mx-auto">
+        <div class="col mb-2">
+          <div class="card rounded-3 mx-auto" style="max-width: 400px; max-height: 450px; min-width: 250px; min-height: 250px;" data-aos="flip-up" data-aos-duration="1500" >
+            <div class="card-body rounded-top-3" style="background-image: url('src/solace.jpg'); background-size: 400px 210px; background-position: center; background-repeat: no-repeat;">
+              
+            </div>  
+            <div class="card-footer text-white rounded-bottom-3" style="background-color: #800000;">
+             <p class="fw-bold h5">Solace</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-2">
+          <div class="card rounded-3 mx-auto" style="max-width: 400px; max-height: 450px; min-width: 250px; min-height: 250px;" data-aos="flip-up" data-aos-duration="1500" >
+            <div class="card-body rounded-top-3" style="background-image: url('src/valentines.jpg'); background-size: 400px 330px; background-position: center; background-repeat: no-repeat;">
+              
+            </div>  
+            <div class="card-footer text-white rounded-bottom-3" style="background-color: #800000;">
+             <p class="fw-bold h5">Valentines</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-2">
+          <div class="card rounded-3 mx-auto" style="max-width: 400px; max-height: 450px; min-width: 250px; min-height: 250px;" data-aos="flip-up" data-aos-duration="1500" >
+            <div class="card-body rounded-top-3" style="background-image: url('src/haloween.jpg'); background-size: 377px 293px; background-position: top; background-repeat: no-repeat;">
+              
+            </div>  
+            <div class="card-footer text-white rounded-bottom-3" style="background-color: #800000;">
+             <p class="fw-bold h5">Halloween</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      
+
+    </div>
+    <div class="row mx-3" id="admissions">
+      <div class="row mx-0 text-white bg-gradient" id="maroon" style=" background-color: #800000;" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-md-6 text-center ">
+          <p class="h3">Admissions</p>
+          <div class="row mt-5 pt-4">
+            <p class="h1" id="sh_words" data-aos="flip-left" data-aos-duration="1000">Discover Your Future Career Path
+              With Our Senior High School Tracks</p>
+          </div>
+          <div class="row mt-5">
+            <a class="h1 link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="links/admission.html">Senior High</a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <img src="src/SHS_INset-lo-full.webp" alt="shs students" width="100%" class="img-fluid">
+        </div>
+      </div>
+    
+      <!-- Second section -->
+      <div class="row mx-0 text-white bg-gradient" id="blue" style="background-color: #00008B;" data-aos="fade-down" data-aos-duration="1500">
+        <div class="col-md-6">
+          <img src="src/students.png" alt="College students" width="100%" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="row my-5 text-center">
+            <p class="h1" data-aos="flip-left" data-aos-duration="1000">Invest in your tomorrow,<br> reach for your dreams,<br> and choose to be the best version of yourself!</p>
+          </div>
+          <div class="row mt-0 mb-5">
+            <a class="h1 link-warning link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="links/admission.html">College</a>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+      
+    </div>
+    <div class="row mx-3 text-dark" id="aboutUs">
+      <div class="container">
+        <p class="h3" style="color: #800000;">About the AMA Education System</p>
+        <section> <p>The AMA Education System is a leading provider of IT-based education in the Philippines,
+          and its flagship institution, AMA University and Colleges, is a member of this esteemed system. 
+          Founded by Dr. Amable R. Aguiluz V in 1980 and named after his father, Hon. Amable M. Aguiluz, 
+          AMA has become the largest network of colleges and universities in Asia, producing graduates 
+          who are highly competent in various technologies and applications needed in the industry.</p>
+
+        </section>
+        <section> 
+          <p> AMA’s focus on IT education means that technology is integrated into all of its programs,
+          providing students with an advantage in the use of different industry-required business applications
+          and making them tech-savvy. The AMA Education System is dedicated to providing quality education that
+          prepares students for promising careers, and as the pioneer in IT education and online learning
+          in the Philippines, AMAES offers a holistic, high-quality education to produce graduates who are ready
+          to meet the demands of the times. This commitment to excellence has made AMA Education System a reliable 
+          and trusted provider of education in the Philippines.</p>
+
+        </section>
+        <section>
+          <p class="h4"style="color: #800000;">Mission</p>
+          <p>
+            To provide a holistic, relevant, quality and globally recognized IT-based education in all levels and 
+            disciplines with the objective of producing professionals and leaders responsive to the needs of Science 
+            and the international community cognizant of the welfare and benefits of its men and women thereby realizing 
+            their potential as productive members of the society for the honor and glory of God Almighty.
+          </p>
+        </section>
+        <section>
+          <p class="h4"style="color: #800000;">Vision</p>
+          <p>
+            To be the leader and dominant provider of relevant globally recognized information technology-based education 
+            and related services in the global market.
+          </p>
+        </section>
+
+      </div>
+    </div>
+    <div class="row mx-3 " id="contactUs">
+      <p class="h4">Contact Us</p>
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col text-center">
+            <i class="fa-solid fa-phone fa-4x text-warning mb-3 " id="contactUs"></i>
+            <p class="h5 "> 0917 566 9532</p>
+          </div>
+          <div class="col text-center">
+            <i class="fa-solid fa-envelope fa-5x text-warning " id="gmail"></i>
+            <p class="h5"> aclccollegedaet@gmail.com</p>
+
+          </div>
+          <div class="col text-center">
+           
+            <a class="h5 link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.facebook.com/aclccollegeofdaet/">
+              <i class="fa-brands fa-facebook-f fa-4x text-warning mb-2" id="facebook"></i><br>
+              aclccollegeofdaet
+            </a>
+          </div>
+        </div> 
+       
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <footer class=" p-5 text-white" style="background-color: #800000;max-height: 80rem; min-height: 13rem;">
+    
+    <div class="row">
+      <div class="col-6">
+        <img src="src/AMAES-Logo-WHITE-mono-sm.png" alt="ama logo"  style="min-width: 80%; max-width: 14rem; height: auto;">
+      </div>
+      <div class="col">
+        <p class="h5 text-warning">Contact Us</p>
+        <div class="row mt-3">
+          <p class="h6"><i class="fa-solid fa-location-dot text-warning me-2"></i> 2F Guinhawa Bldg. J. Lukban St. Daet, Cam. Norte</p>
+        </div> 
+        <div class="row">
+          <p class="h6"><i class="fa-solid fa-phone text-warning me-2 "></i> 0917 566 9532</p>
+        </div> 
+        <div class="row">
+          <p class="h6"><i class="fa-solid fa-envelope text-warning  me-2 "></i> aclccollegedaet@gmail.com</p>
+        </div>  
+      </div>
+      <div class="col">
+        <div class="row mb-4">
+          <p class="h5 text-warning">Follow Us</p>
+          <div class="col-1">
+            <a class="h5 link-underline link-underline-opacity-0" href="https://www.facebook.com/aclccollegeofdaet/"><i class="fa-brands fa-facebook-f text-warning  "></i></a>
+          </div> 
+          <div class="col-1">
+            <a class="h5 link-underline link-underline-opacity-0" href="https://www.tiktok.com/@aclcdaetofficialaccount"><i class="fa-brands fa-tiktok text-warning  "></i></a>
+          </div> 
+          <div class="col-1">
+            <a class="h5 link-underline link-underline-opacity-0" href="#"><i class="fa-brands fa-square-x-twitter text-warning"></i></a>
+          </div> 
+          <div class="col-1">
+            <a class="h5 link-underline link-underline-opacity-0" href="#"><i class="fa-brands fa-instagram text-warning"></i></a>
+          </div> 
+          <div class="col-1">
+            <a class="h5 link-underline link-underline-opacity-0" href="#"><i class="fa-brands fa-youtube text-warning"></i></a>
+          </div> 
+        </div>
+        
+      </div>
+      <div class="col mx-2">
+        <div class="row">
+          <p class="h5 text-warning">Site Links</p>
+          <a href="links/courses.html" class="h6 link-white link-underline link-underline-opacity-0 link-underline-opacity-100-hover ">Courses</a>
+          <a href="links/admission.html" class="h6 link-white link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Admissions</a>
+          <a href="links/about_us.html" class="h6 link-white link-underline link-underline-opacity-0 link-underline-opacity-100-hover">About Us</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  </footer>
+
+
+
+
+    
+  <script src="script.js">
+  </script>
+
+
+</body>
+</html>

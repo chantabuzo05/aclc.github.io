@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Courses</title>
+</head>
+<body>
+  <!--=====================NAVBAR================ -->
+  <nav class="navbar w-100 navbar-expand-lg bg-body-tertiary bg-light bg-gradient px-4" id="navbar" >
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarTogglerDemo01">
+            <img src="../src/aclc.png" class="rounded  h-auto me-3" style=" min-width:5rem; max-width:15%;" alt="...">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html?#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html?#courses">Courses</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html?#events">Events</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html?#admissions">Admissions</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html?#aboutUs">About Us</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html?#contactUs">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="col">
+        <a href="login.html" class="btn text-warning  fw-bold float-end " style="background-color: #800000;">Login</a>
+    </div>
+  </nav>
+  <div class="container my-3 d-flex justify-content-center">
+    <div class="card w-100" >
+      <div class="card-header bg-warning text-center">
+        <p class="h2">Courses and Strands</p>
+      </div>
+      <div class="card-body">
+        <ul class="nav nav-underline mb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="bsit-tab" data-bs-toggle="tab" data-bs-target="#bsit-tab-pane" type="button" role="tab" aria-controls="bsit-tab-pane" aria-selected="true">BSIT</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="bse-tab" data-bs-toggle="tab" data-bs-target="#bse-tab-pane" type="button" role="tab" aria-controls="bse-tab-pane" aria-selected="false">BSE</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="act-tab" data-bs-toggle="tab" data-bs-target="#act-tab-pane" type="button" role="tab" aria-controls="act-tab-pane" aria-selected="false">ACT</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tvl-tab" data-bs-toggle="tab" data-bs-target="#tvl-tab-pane" type="button" role="tab" aria-controls="tvl-tab-pane" aria-selected="false">TVL</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="humms-tab" data-bs-toggle="tab" data-bs-target="#humms-tab-pane" type="button" role="tab" aria-controls="humms-tab-pane" aria-selected="false">HUMMS</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="abm-tab" data-bs-toggle="tab" data-bs-target="#abm-tab-pane" type="button" role="tab" aria-controls="abm-tab-pane" aria-selected="false">ABM</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="gas-tab" data-bs-toggle="tab" data-bs-target="#gas-tab-pane" type="button" role="tab" aria-controls="gas-tab-pane" aria-selected="false">GAS</button>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <!--================================BSIT======================================-->
+          <div class="tab-pane fade show active" id="bsit-tab-pane" role="tabpanel" aria-labelledby="bsit-tab" tabindex="0">
+            <p class="h4 fw-bold text-center" style="color: #800000;">BSIT <br> (Bachelor of Science in Information Technology)</p>
+            <section class="mx-5">
+              <p>
+                The Bachelor of Science in Information Technology program is designed to provide outcomes-based IT training that is not only nationally 
+                accredited but also globally competitive and to produce graduates who will be professionally competent, morally upright, and socially 
+                responsible contributors to national development.
+              </p>
+            </section>
+            <section  class="mx-5">
+              <p>
+                The program is a study of the utilization of computers and computer software to plan, install, customize, operate, manage, administer and 
+                maintain information technology infrastructure. It prepares students to be IT professionals well versed on application, installation, 
+                operation, development, maintenance and administration of IT hardware and software.
+              </p>
+            </section>
+            <div class="row mx-5">
+              <div class="col text-start mx-5">
+                <ul class="mx-5" style="list-style-type:none;">
+                  <p class="h6 fw-bold " >Primary Job Role:</p>
+                  <li>– Web Application Developer</li>
+                  <li>– Database Administrator</li>
+                  <li>– System Administrator</li>
+                  <li>– Network Engineer</li>
+                  <li>– Information Security Administrator</li>
+                  <li>– System Integration Trainee</li>
+                  <li>– IT Audit Assistant</li>
+                  <li>– IT Audit Assistant</li>
+                </ul>
+              </div>
+              <div class="col text-start mx-5">
+                <ul class="mx-5" style="list-style-type:none;">
+                  <p class="h6 fw-bold">Secondary Job Role:</p>
+                  <li>– QA Specialist</li>
+                  <li>– System Analyst</li>
+                  <li>– Computer Programmer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--================================BSE======================================-->
+          <div class="tab-pane fade" id="bse-tab-pane" role="tabpanel" aria-labelledby="bse-tab" tabindex="0">
+            <p class="h4 fw-bold text-center" style="color: #800000;">BSE <br> (Bachelor of Science in Entrepreneurship)</p>
+            <section class="mx-5">
+              <p>
+                The Bachelor of Science in Entrepreneurship (BS Entrep)  is a four-year degree program in the Philippines that will train you in identifying 
+                opportunities, developing and preparing business plans, and starting and managing your own business.
+              </p>
+            </section>
+            <section class="mx-5">
+              <ul class="mx-5" style="list-style-type:none;">
+                <p class="h6 fw-bold">Career opportunities:</p>
+                <li>– Entrepreneur</li>
+                <li>– Business Consultant</li>
+              </ul>
+            </section>
+          </div>
+            <!--================================ACT======================================-->
+          <div class="tab-pane fade" id="act-tab-pane" role="tabpanel" aria-labelledby="act-tab" tabindex="0">
+            <p class="h4 fw-bold text-center" style="color: #800000;">ACT <br> (Associate in Computer Technology)</p>
+            <section class="mx-5">
+              <p>
+                The Associate in Computer Technology program (ACT) provides knowledge and skills in the fundamental of computer programming and basic computation. 
+                The program also includes topics related to data structures, network concepts, computer organization, database management system and system analysis 
+                and design. It aims to promote analytical, critical thinking, software troubleshooting and programming skills.
+              </p>
+            </section>
+            <section class="mx-5">
+              <ul class="mx-5" style="list-style-type:none;">
+                <p class="h6 fw-bold">Career opportunities:</p>
+                <li>– Computer Programmer</li>
+                <li>– Computer / Network System Administrator</li>
+                <li>– Computer / Network Support Technician</li>
+                <li>– Software Tester</li>
+                <li>– Programmer Analyst</li>
+                <li>– Network IT Administrator</li>
+              </ul>
+            </section>
+          </div>
+          <!--================================TVL======================================-->
+          <div class="tab-pane fade" id="tvl-tab-pane" role="tabpanel" aria-labelledby="tvl-tab" tabindex="0">
+            <p class="h4 fw-bold text-center" style="color: #800000;">TVL <br> (Technical Vocational Livelihood)</p>
+            <section class="mx-5">
+              <p>If you wish to work right after a K to 12 track and strand, the TVL track fits you. And if you want to further your career in college 
+                with this track, check the senior high strands under this track.
+                
+              </p>
+            </section>
+            <section class="mx-5">
+              <p class="h5 fw-bold mx-5"> Track: ICT (Information and Communications Technology)</p>
+              <ul class="mx-5 " style="list-style-type:none;">
+                <p class="h6 fw-bold ">Possible Courses:</p>
+                <li>– Computer Science</li>
+                <li>– Game Development</li>
+                <li>– Multimedia Arts (BS MMA)</li>
+                <li>– Electrical Computer Engineering</li>
+                <li>– Information Technology</li>
+                <li>– Software Engineering</li>
+              </ul>
+            </section>
+          </div>
+          <!--================================HUMMS======================================-->
+          <div class="tab-pane fade" id="humms-tab-pane" role="tabpanel" aria-labelledby="humms-tab" tabindex="0">
+            <p class="h4 fw-bold text-center" style="color: #800000;">HUMSS <br> (Humanities and Social Sciences)</p>
+            <section class="mx-5">
+              <p>
+                This track is best for students who are not yet sure which path to take. Unlike other K to 12 tracks and strands that are specific to a career, 
+                It gives you the chance to weigh your options. Moreover, a course you can pursue from this strand is education.
+              </p>
+            </section>
+            <section class="mx-5">
+              <ul class="mx-5 " style="list-style-type:none;">
+                <p class="h6 fw-bold ">Possible Courses:</p>
+                <li>– Philosophy (AB Philosophy)</li>
+                <li>– English (AB English)</li>
+                <li>– Linguistics (AB Linguistics)</li>
+                <li>– Literature (AB Literature)</li>
+                <li>– Filipino (AB Filipino)</li>
+                <li>– Islamic Studies (AB Islamic Studies)</li>
+              </ul>
+            </section>
+
+          </div>
+          <!--================================ABM======================================-->
+          <div class="tab-pane fade" id="abm-tab-pane" role="tabpanel" aria-labelledby="abm-tab" tabindex="0">
+            <p class="h4 fw-bold text-center" style="color: #800000;">ABM <br> (Accountancy, Business and Management)</p>
+            <section class="mx-5">
+              <p>
+                The Accountancy, Business and Management (ABM) strand marries creativity, mathematical application, and business sense to prepare the best business 
+                professionals of tomorrow. Taking ABM subjects in senior high school will introduce students to the concepts of financial management, business management, 
+                corporate operations, and accounting. Students who select this route will be prepared for colourful careers as managers, accountants, and business owners. 
+                Students who select this route will be prepared for colorful careers as managers, accountants, and business owners. These ABM courses will equip them with 
+                the necessary industry know-how and skills to perform well in their professions and run their businesses smoothly.
+                
+              </p>
+            </section>
+            <section class="mx-5">
+              <ul class="mx-5 " style="list-style-type:none;">
+                <p class="h6 fw-bold ">Possible Courses:</p>
+                <div class="row">
+                  <div class="col">
+                    <li>– Accountancy (BSA)</li>
+                    <li>– Accounting Technology (BSAcT)</li>
+                    <li>– Business Economics (BSBA)</li>
+                    <li>– Financial Management (BSBA major in FM)</li>
+                    <li>– Human Resource Development (BSBA major in HRDM)</li>
+                    <li>– Marketing Management (BSBA major in MM)</li>
+                    <li>– Operations Management (BSBA major in OM)</li>
+                    <li>– Entrepreneurship (BS Entrep)</li>
+                    <li>– Agribusiness (BS Agribusiness)</li>
+                  </div>
+                  <div class="col">
+                    <li>– Hotel and Restaurant Management (BS HRM)</li>
+                    <li>– Office Administration (BSOA)</li>
+                    <li>– Real Estate Management (BS REM)</li>
+                    <li>– Tourism Management (BSTM)</li>
+                    <li>– Community Development (BS Community Development)</li>
+                    <li>– Foreign Service (BS Foreign Service)</li>
+                    <li>– International Studies (BSIS)</li>
+                    <li>– Public Safety (BSPS)</li>
+                    <li>– Social Work (BS Social Work)</li>
+                  </div>
+                </div>
+              </ul>
+            </section>
+          </div>
+          <!--================================GAS======================================-->
+          <div class="tab-pane fade" id="gas-tab-pane" role="tabpanel" aria-labelledby="gas-tab" tabindex="0">
+            <p class="h4 fw-bold text-center" style="color: #800000;">GAS <br> (General Academic Strand )</p>
+            <section class="mx-5">
+              <p>
+                This track is best for students who are not yet sure which path to take. Unlike other K to 12 tracks and strands that are specific to a career, 
+                GAS gives you the chance to weigh your options. Moreover, a course you can pursue from this strand is education.
+              </p>
+            </section>
+            <section class="mx-5">
+              <ul class="mx-5 " style="list-style-type:none;">
+                <p class="h6 fw-bold ">Possible Courses:</p>
+                <li>– English</li>
+                <li>– Filipino</li>
+                <li>– Technology and Livelihood Education</li>
+                <li>– Biological Education</li>
+                <li>– Mathematics</li>
+                <li>– Physical Sciences</li>
+                <li>– Social Studies</li>
+                <li>– Values Education</li>
+                <li>– Preschool Education</li>
+                <li>– Special Education</li>
+              </ul>
+            </section>
+
+          </div>
+          
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    $(document).ready(function () {
+      // Get the tab ID from the URL parameter
+      var urlParams = new URLSearchParams(window.location.search);
+      var tabIdToActivate = urlParams.get('activatetab');
+
+      // Activate the specified tab
+      if (tabIdToActivate) {
+         $('#' + tabIdToActivate).tab('show');
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+</body>
+</html>

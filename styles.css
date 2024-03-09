@@ -1,0 +1,30 @@
+html {
+  scroll-padding-top: 89px; /* height of sticky header */
+}
+body{
+  margin-top: 90px;
+}
+#courses{
+  background-image: url("src/coverIMG.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+#container #college,#senior_high{
+  backdrop-filter: blur(2px); /* Adjust the blur value as needed */
+}
+
+
+#maroon{
+  background-image: url("gradient.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  
+
+
+
+}
+
+
